@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">    <!-- LINK TO EXTERNAL JS LIBRARIES HERE -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.9/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.9/dist/sweetalert2.min.js"></script>
+    <!-- LINK TO YOUR JS HERE. NOTE THE DEFER ATTRIBUTE. -->
+    <script src="./scripts/streams.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blooms.html">blooms</a></li>
+        <li><a href="forest.html">forest</a></li>
+        <li><a href="wildlife.html">wildlife</a></li>
+      </ul>
+    </nav>
+    <p class="instructions">Shift adjacent puzzle pieces to uncover the secrets of nature!</p>
+    <div id="game-container">
+      <div id="board" class="board-3x3"></div>
+      <div id="hint-image-container">
+        <img id="hint-image" src="" alt="complete image of the puzzle" />
+      </div>
+    </div>
+    <h1>Turns: <span id="turns">0</span></h1>
+    <div class="button-container">
+      <button type="button" id="easy">easy</button>
+      <button type="button" id="medium">medium</button>
+      <button type="button" id="hard">hard</button>
+      <button type="button" id="hint">hint</button>
+    </div>
+  </body>
+</html>
